@@ -1,0 +1,56 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+
+  <div class="row  ">
+    <div class="col-8 offset-2 ">
+    <h3>Create a New Listing</h3>
+    <form action="/listings" method="POST" novalidate class="needs-validation">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" placeholder="Enter title" name="title" required class="form-control">
+        <div class="valid-feedback">Title looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="description" placeholder="Enter description" required class="form-control"></textarea>
+        <div class="valid-feedback">Description looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Image Link</label>
+        <input type="text" name="image" placeholder="Enter image URL" required class="form-control">
+        <div class="valid-feedback">Image looks good!</div>
+      </div>
+      <div class="row">
+        <!--  to put price and country on the same line -->
+        
+        <div class="mb-3 col-4">
+          <label for="price" class="form-label" >Price</label>
+          <input type="number" name="price" placeholder="Enter price" min="0" required class="form-control">
+          <div class="valid-feedback">Price looks good!</div>
+        </div>
+        <div class="mb-3 col-md-8">
+          
+          <label for="country" class="form-label" >Country</label>
+          <input type="text" name="country" placeholder="Enter country" required class="form-control">
+          <div class="valid-feedback"></div>
+        </div>
+      </div>
+      <div class="mb-3">
+        
+        <label for="location" class="form-label">City</label>
+        <div class="valid-feedback"></div>
+        <input type="text" name="location" placeholder="Enter location" required class="form-control">
+      </div>
+      <br>
+      <div class="mb-3">
+      
+        <button class="btn btn-outline-success" type="submit" style="margin-bottom: 10px;">Submit</button>
+      </div>
+      
+    </form>
+    </div>
+  </div>
+
+
+</body>
+

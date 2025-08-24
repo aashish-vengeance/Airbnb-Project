@@ -1,0 +1,104 @@
+*{
+    background-color: rgb(254, 254, 254);
+} 
+    body{
+        font-size: 1.3rem;
+        font-family: "Plus Jakarta Sans", sans-serif !important;
+        display: flex ;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .container{
+      flex: 1;
+    }
+    .navbar{
+      height: 5rem;
+      position:sticky !important;
+      z-index: 100 ;
+      top: 0;
+    }
+    .fa-compass{
+      color: #fe434d;
+      font-size: 2rem;
+    }
+    .nav-link{
+      color: #222222 !important;
+      font-weight: bolder ;
+    }
+
+    /* Footer */
+    .f-info-links a{
+      text-decoration: none;
+      color: #222222;
+    }
+    .f-info-links a:hover{
+      text-decoration: underline;
+    }
+    .f-info{
+      display: flex;
+      height: 6rem;
+      border-top: 2px solid gainsboro;
+      padding: 24px 0px ;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .f-info-links{
+      padding-left: 35px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+
+    }
+    .f-info-socials{
+      padding-right: 35px;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.5rem;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .f-info-socials:hover{
+      transition: all 0.3s ease-in;
+       color: #49494a; /* example: Twitter blue */
+
+    }
+
+    /* index page cards */
+    .card{
+      border: none !important;
+      margin-bottom: 2rem;
+    }
+    .card-img-top{
+      border-radius: 1rem !important;
+      width: 100%;
+      object-fit: cover !important;
+    }
+    .row a{
+      text-decoration: none !important;
+      color: black !important;
+    }
+    .card-body{
+      padding: 0 !important;
+    }
+    .card-text p{
+      font-weight: 400 !important;
+    }
+    /* card effects */
+    .card-img-overlay{
+      opacity:0;
+    }
+    .card-img-overlay:hover{
+      opacity: 0.1;
+      color: white;
+    }
+/*  show page */
+.show-img{
+  /* width: 40vw !important; */
+  height: 40vh !important;
+}
+.btns{
+  display: flex;
+  /* justify-content: center; */
+}
+
