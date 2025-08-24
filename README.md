@@ -70,3 +70,13 @@ Run the server
 npm start
 
 Visit 👉 http://localhost:3000
+
+📝 Future Improvements
+
+Add user authentication (sign-up, login)
+
+Implement a booking system
+
+Integrate payment gateway (Stripe/PayPal)
+
+Add map support with Google Maps API
